@@ -10,5 +10,37 @@
 
 // check the time to reassess the color schemes of the rows
 // -- use day js to check the hour and check - do a if statement on class creation to change color
-
+console.log("hi")
 var arrayOfTime = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+
+for (let i = 0; i < arrayOfTime.length; i++) {
+
+    //making the row to append things onto and this appends to container
+    let rowOfTime = $("<div></div>");
+    rowOfTime.attr("class", "row time-block");
+    $(".containerOfTime").append(rowOfTime);
+
+    // making the time identifier
+    let divOfTime = $("<div></div>");
+    divOfTime.attr("class", "hour col-1");
+    if (i < 3) {
+        divOfTime.text(arrayOfTime[i] + " AM");
+    } else if (i === 3) {
+        divOfTime.text(arrayOfTime[i] + " PM");
+    } else {
+        divOfTime.text(arrayOfTime[i] - 12 + " PM");
+    }
+    rowOfTime.append(divOfTime);
+
+    //making the text areas and appending to row 
+    let textOfTime = $("<textarea>");
+    textOfTime.attr("class", "description col-10");
+    rowOfTime.append(textOfTime);
+
+    // making the button area and appending to row
+    let buttonOfTime = $("<button>");
+    buttonOfTime.attr("class", "saveBtn col-1");
+    rowOfTime.append(buttonOfTime);
+
+    
+}
