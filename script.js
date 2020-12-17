@@ -70,7 +70,6 @@ $(document).ready(function () {
     // figure out how to set the data equal to the row
     // using $this.data to retrieve a number and attach that to the key to get a local data for each button.
     var buttonNumber = $(this).data("data-index");
-    console.log(buttonNumber);
     //set local data of the text
     localStorage.setItem("textAreaData" + buttonNumber, JSON.stringify(textStoring));
   });

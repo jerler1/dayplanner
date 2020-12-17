@@ -1,105 +1,61 @@
-# 05 Third-Party APIs: Work Day Scheduler
-
-## Your Task
-
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-You'll need to use a library like [Moment.js](https://momentjs.com/) to work with dates and times. `Moment.js` has historically been the most popular date/time library but is no longer supported by its developers. However, you can still use it for this project, or you can look into one of the following alternatives:
-
-  * [Luxon](https://moment.github.io/luxon/)
-
-  * [Day.js](https://day.js.org/)
-
-  * [date-fns](https://date-fns.org/)
-
-  * [js-Joda](https://js-joda.github.io/js-joda/)
-
-Whichever library you choose, be sure to read the documentation carefully!
+## Day Planner
 
 
-## User Story
+#### **Table of Contents**
+---
+1. [Installalation](#installation)
+1. [Trials](#trials)
+1. [Usage](#usage)
+1. [Credits](#credits)
+1. [License](#license)
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+#### **Installation**
+---
+To intall this application using prebuilt html and css elements involved this:
 
-
-## Acceptance Criteria
-
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+1. Constructed the first row in html, to verify the look was what I wanted. 
+1. Installed the day.JS CDN and read up on documentation.
+1. Developed a for loop to dynamically make all rows of the calender, using approiate classes for the css, and using said css classes a color scheme was installed to show if an hour has passed or is upcoming.
+1. Configured the buttons to save the notes in the text input to be saved into local data.
+1. Reconfigued the for loop to get the local data as it is being populated.
 
 
-## Mock-Up
+#### **Trials**
+---
+The under lying principles of this task were on the more simple side, but learning to read the documentation and implement a JavaScript libraray was refreshing and rewarding.
 
-The following animation demonstrates the application functionality:
+#### **Usage**
+---
+The usage of this site is very simple.  In the text area in the middle of the page, you can type any notations you wish and click the save button on the right side of the row that is corresponding to the text input you are writing in.  Once clicked the text will be saved and when the application is reloaded the text will still be present. 
+![Picture of the day planner](./daycalender.png)
+Link to the deployed website can be found [here](https://jerler1.github.io/dayplanner/).
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+#### **Credits**
+---
+Thanks to Day JS. [Link to day JS website](https://day.js.org/en/).
 
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses the Moment.js library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
+#### **License**
+---
 
 
-## Review
+Copyright (c) 2005-2020 David Heinemeier Hansson
 
-You are required to submit BOTH of the following for review:
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
 
-* The URL of the functional, deployed application.
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
